@@ -7,7 +7,15 @@ public class operator {
 
     }
     public String SHA512(String s,int mainlen){
-        byte[] message = s.getBytes();
+
+       char[] c_arr = s.toCharArray();
+        byte[] message = new byte[s.length()];
+        for(int i=0;i<s.length();i++){
+            if(c_arr[i]!='0' && c_arr[i]!='1')  message[i]=(byte)c_arr[i];
+            else if(c_arr[i]=='1') message[i]= (byte) 0x80;
+        }
+       //byte[] message = s.getBytes();
+        System.out.println(message.length);
 
         byte[] lenInBytes = BigInteger.valueOf(mainlen * 8).toByteArray();
 
@@ -57,6 +65,7 @@ public class operator {
             eightInitialBuffers[5] = f + eightInitialBuffers[5];
             eightInitialBuffers[6] = g + eightInitialBuffers[6];
             eightInitialBuffers[7] = h + eightInitialBuffers[7];
+
         }
 
         String result = "";

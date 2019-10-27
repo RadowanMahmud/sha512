@@ -6,14 +6,14 @@ public class initializedValues {
     }
 
     protected static long[] eigthInitialBuffers = new long[] {
-            0x6A09E667F3BCC908L,
-            0xBB67AE8584CAA73BL,
-            0x3C6EF372FE94F82BL,
-            0xA54FF53A5F1D36F1L,
-            0x510E527FADE682D1L,
-            0x9B05688C2B3E6C1FL,
-            0x1F83D9ABFB41BD6BL,
-            0x5BE0CD19137E2179L
+            0x6a09e667f3bcc908l,
+            0xbb67ae8584caa73bl,
+            0x3c6ef372fe94f82bl,
+            0xa54ff53a5f1d36f1l,
+            0x510e527fade682d1l,
+            0x9b05688c2b3e6c1fl,
+            0x1f83d9abfb41bd6bl,
+            0x5be0cd19137e2179L,
     };
 
     // The constant words used in the algorithm
